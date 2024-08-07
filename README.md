@@ -12,9 +12,11 @@ import threading
 import time
 ```
 #Connect to MongoDB (adjust the connection string as needed)
+```
 client = MongoClient('mongodb://localhost:27017/')
 db = client['test_database']
 collection = db['test_collection']
+```
 Step 3: Define a Function to Watch Changes
 Define a function that will watch for changes in the collection and handle those changes.
 ```
